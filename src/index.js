@@ -11,7 +11,7 @@ const hasChromeExtension = () => isBrowser() && window._steemconnect;
 
 const hasSteemKeychain = () => isBrowser() && window.steem_keychain;
 
-const useSteemKeychain = () => !hasChromeExtension() && hasSteemKeychain();
+const useSteemKeychain = () => hasSteemKeychain();
 
 const sendTransaction = (tx, params, cb) => {
   const uri = encodeTx(tx, params);
