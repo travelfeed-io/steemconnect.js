@@ -7,7 +7,7 @@ const API_URL = 'https://api.steemconnect.com';
 
 const isBrowser = () => typeof window !== 'undefined' && window;
 
-const hasChromeExtension = () => isBrowser() && window._steemconnect;
+const hasChromeExtension = () => isBrowser() && window._steemconnect && !window.steem_keychain;
 
 const hasSteemKeychain = () => isBrowser() && window.steem_keychain;
 
