@@ -7,5 +7,4 @@ coverage
 .vscode
 
 # Build files
-lib
-dist
+dist/stats.html
